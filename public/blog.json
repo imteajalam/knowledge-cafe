@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "Hey! This the Beautiful How learn AI Blog Post",
+    "author": "Jakir Alam",
+    "author_img": "../src/assets/images/boy1.png",
+    "cover": "../src/assets/images/1.jpg",
+    "hash_tag": ["#blogging", " #AI"],
+    "posted_times": "2023-10-10T02:56:24",
+    "reading_time": 8
+  }
+,
+{
+  "id": 2,
+  "title": "Hey! This is a Programming Blog. this Blog Written by my friend Rahad .",
+  "author": "Rahat Hossain",
+  "author_img": "../src/assets/images/boy2.png",
+  "cover": "../src/assets/images/2.png",
+  "hash_tag": ["#blogging", " #AI"],
+  "posted_times": "2023-10-10T02:56:24",
+  "reading_time": 5
+},
+{
+  "id": 3,
+  "title": "How Learn Programming with Jhankar",
+  "author": "Antor Ahmad",
+  "author_img": "../src/assets/images/girl1.jpg",
+  "cover": "../src/assets/images/3.png",
+  "hash_tag": ["#blogging", " #AI"],
+  "posted_times": "2023-10-10T02:56:24",
+  "reading_time": 4
+},
+{
+  "id": 4,
+  "title": "How to Learn Programming",
+  "author": "Yahiya Amin",
+  "author_img": "../src/assets/images/girl1.jpg",
+  "cover": "../src/assets/images/4.jpg",
+  "hash_tag": ["#blogging", " #AI"],
+  "posted_times": "2023-10-10T02:56:24",
+  "reading_time": 5
+},
+{
+  "id": 5,
+  "title": "If you fail, Don't be scared.",
+  "author": "Jamin ALam",
+  "author_img": "../src/assets/images/girl2.jpg",
+  "cover": "../src/assets/images/4.jpg",
+  "hash_tag": ["#blogging", " #AI"],
+  "posted_times": "2023-10-10T02:56:24",
+  "reading_time": 9
+}
+]
