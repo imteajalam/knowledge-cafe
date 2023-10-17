@@ -7,7 +7,7 @@ const Blogs = ({ handleAddToBookmark, handleMarkAsRead }) => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/rahathossenantor/fun-with-api/main/knowledgeCafe.json')
+    fetch('blog.json')
       .then(res => res.json())
       .then(data => setBlogs(data))
   }, [])

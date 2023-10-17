@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 import { useState } from 'react'
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
@@ -9,12 +9,29 @@ function App() {
   const [bookmarks, setBookmarks] = useState([]);
   const [readingTime, setReadingTime] = useState(0);
 
+
   const handleAddToBookmark = blog => {
-    const newBookmarks = [...bookmarks, blog];
-    setBookmarks(newBookmarks)
+    const isExist = bookmarks.find(b => b.id === blog.id)
+    if (!isExist) {
+      setBookmarks([...bookmarks, blog])
+      Swal.fire({
+        title: 'Success!',
+        text: 'Successfully Bookmarked!',
+        icon: 'success',
+        confirmButtonText: 'Close'
+      })
+      
+
+    }
+    else{ Swal.fire({
+      title: 'Error!',
+      text: 'Already Bookmarked!',
+      icon: 'error',
+      confirmButtonText: 'Close'
+    })}
   }
 
-  const handleMarkAsRead = (time , id) => {
+  const handleMarkAsRead = (time, id) => {
     setReadingTime(readingTime + time)
     //remove bookmark id 
     const remainingBookMarks = bookmarks.filter(bookmark => bookmark.id !== id);
